@@ -1,0 +1,48 @@
+body{
+    background-color: white;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+p{
+    text-align: justify;
+    cursor: crosshair;
+    font-family: 'Raleway', sans-serif;
+}
+
+.image{
+    image-orientation: center;
+}
+.imageright {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+h1{
+	Color: black;
+	text-align: center;
+	text-align: center;
+    font-family: 'Exo 2'sans-serif;
+	font-size: 48px;
+    
+}
+
+h2{
+    text-align: center;
+	color: blue;
+}
+
+h3{
+    color: green;
+    text-align: center;
+}
+
+strong{
+        text-decoration: overline;
+}
+fieldset{
+ border-top-width: medium;
+    
+}
