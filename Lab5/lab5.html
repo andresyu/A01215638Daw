@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html lang="es-mx">
+
+<head>
+
+<meta charset="utf-8"/>
+ 
+<link rel="stylesheet" type="text/css" href="lab3.css">
+
+<title> Lab 5 </title>
+
+</head>
+
+<body>
+    
+    <div id = "env">
+     
+        <header>
+		  <h1>Laboratorio 5</h1>
+	    </header>
+    
+        <main id = "contenido">
+<section>
+        <h3>Validar Contraseña</h3>
+    <article id = "contraseña">
+
+        <form onsubmit= "return checarCon(this);">
+          <p>Ingresar Contraseña:</p>
+          <input type="password" placeholder="Ingresar Contraseña" name = "con1" required/>
+                        
+          <p>Confirmar Contraseña: </p>
+          <input type="password" placeholder="Confirmar Contraseña" name = "con2" required/>
+          <input type="submit" value="Submit">
+                        
+        </form>              
+    </article>
+</section>
+            
+     <section>
+     <h3>Catalogo de Productos:</h3>
+        <article>
+            <table id = "tablaProductos">
+            <form>
+                        
+            <tr>
+            <td> 
+            </td>
+            <td> Detalles: </td>
+            <td> Precio: </td>
+            <td> Cant: </td>
+            <td> Subtotal </td>
+            </tr>
+
+        <tr>
+            <td>
+            
+            </td>
+
+            <td>
+            Iphone X 64gb Negro
+           </td>
+                <td>
+                    $23,500
+                </td>
+            <td>   
+                <select class= "cantidad" onchange="calcularSubTotal(0);">   </select>
+            </td>
+                <td>
+                    <div class = "subTotal">$0</div>
+                </td>
+        </tr>
+              <tr>
+                <td>
+                
+                </td>
+                    <td>
+                        Apple Watch nike 3
+                    </td>
+                          <td>
+                                $7,000
+                          </td>
+                                <td>
+                                    <select class = "cantidad" onchange="calcularSubTotal(1);">   </select>
+                                </td>
+                    <td>
+                        <div class = "subTotal">$0</div>
+                    </td>
+            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    Macbook Pro 128gb i7
+                                    <br>
+                                </td>
+                                <td>
+                                    $30,000
+                                </td>
+                                <td>
+                                    <select class = "cantidad" onchange="calcularSubTotal(2);">  </select>
+                                </td>
+                                <td>
+                                    <div class = "subTotal">$0</div> <br>
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    SubTotal=
+                                </td>
+                                <td>
+                                    <div id = "subTotal">$0</div>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    Iva=
+                                </td>
+                                <td>
+                                    <div id = "iva">$0</div>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    Total=
+                                </td>
+                                <td>
+                                    <div id = "tot">$0</div>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    <input type="submit" value="Pagar" onclick="confirmarPago();">
+                                </td>
+                            </tr>
+                        
+                        </form>
+                    </table>
+                </article>
+            </section>
+            
+            <section>
+                <h3>Problema</h3>
+                <article>
+                    
+                    <h3>Calcular el area de un Circulo:</h3>
+                    
+                    <form id = "area" name ="ar">
+                        <input type="number" placeholder="Radio" name="radio" required>
+                        <input type="submit" value="Calcular">
+                    </form>
+                    <p id = "area"></p>
+                
+                </article>
+            </section>
+            
+            <section> 
+               <h3> Preguntas a responder: </h3>
+                
+                <article>
+                    <h4>
+                        ¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?
+                    </h4>
+                    
+                    <p>
+                        El usuario puede saber si cometio un error en la validacion y evita que el servidor se llene de solicitudes incorrectas
+                    </p>
+                    
+                    <h4>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</h4>
+                    
+                    <p>
+                        Deshabilitando javascript en el navegador o quitando la funcion onSubmit
+                    </p>
+                    
+                    <h4>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</h4>
+                    
+                    <p>
+                        Nos podemos ahorrar tiempo de espera para una respuesta de http
+                    
+                    </p>
+
+                </article>
+            </section>
+            
+            <section>
+               <B><h3>Referencias:</h3></B> 
+                <p>
+                    [1] https://developer.mozilla.org/es/docs/Learn/HTML/Forms/Validacion_formulario_datos
+                </p>
+                
+            </section>
+        </main> 
+    </div>
+    <script type = "text/javascript" src = "lab5.js"></script>
+</body>
+</html>
