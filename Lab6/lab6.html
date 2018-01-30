@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="es-mx">
+
+<head>
+
+<meta charset="utf-8"/>
+ 
+<link rel="stylesheet" type="text/css" href="lab3.css">
+
+<title> Lab 6 </title>
+
+</head>
+
+<body>
+    
+    <div id = "env">
+     
+        <header>
+		  <h1>Laboratorio 6</h1>
+	    </header>
+    
+        <main id = "contenido">
+<section>
+        <h3>Validar Contraseña</h3>
+    <article id = "contraseña">
+
+        <form onsubmit= "return checarCon(this);">
+          <p>Ingresar Contraseña:</p>
+          <input type="password" placeholder="Ingresar Contraseña" name = "con1" required/>
+                        
+          <p>Confirmar Contraseña: </p>
+          <input type="password" placeholder="Confirmar Contraseña" name = "con2" required/>
+          <input type="submit" value="Submit">
+                        
+        </form>              
+    </article>
+</section>
+            <section>
+            
+                <article>
+                    
+                    <h3>Calcular el area de un Circulo:</h3>
+                    
+                    <form id = "area" name ="ar">
+                        <input type="number" placeholder="Radio" name="radio" required>
+                        <input type="submit" value="Calcular">
+                    </form>
+                    <p id = "area"></p>
+                
+                </article>
+                <section>
+                    
+                <h2>Hora:</h2>
+                <article>
+                  <p>Ahorita son las: </p>  <p  id="reloj"></p>
+                </article>
+                
+                <h2>Boton de Ayuda:</h2>
+                
+                <p>Abre la ventana de ayuda presionando en el boton:</p>
+                <button onclick="openWin()">AYUDA</button>
+            </section>
+            
+            <section>
+                
+                <h2>Drag & Drop:</h2>
+                
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                
+                    <img src=http://poolpmx.com/wp-content/uploads/2015/05/rick-and-morty-season-2.jpg draggable="true" ondragstart="drag(event)" id="drag1" width="155" height="155">
+                    
+                </div>
+            
+                <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>          
+            </section>
+            </section>
+            
+            <section> 
+               <h3> Preguntas: </h3>
+                
+                <article>
+                    <h4>
+                        ¿Cuáles son las diferencias entre los posibles valores de la propiedad position?
+                    </h4>
+                    
+                    <p>
+                        -Sticky: hace que un elemento pueda cambiar entre fixed y relative ya que se queda fijo despues del desplazamiento de la pagina.<br>
+                        -Static: está posicionado con el flujo normal de la página.<br>
+                        -Absolute: eja al elemento posicionado relativamente al del elemento padre.<br>
+                        -Relative: el elemento se fijea relativamente a su posición original.<br>
+                        -Fixed: el elemento se puede fijar en un lugar sin importar el desplazamiento de la pagina.<br>
+            
+                    </p>
+                    
+                    <h4>¿Cuáles son los valores estándar para la propiedad visibility?</h4>
+                    
+                    <p>
+                        -Collapse: quita una columna o fila de una tabla sin afectar el layout<br>
+                        -Inherit: hereda el valor del elemento padre<br>
+                        -Initial: inserta el valor default<br>
+                        -Hidden: el elemento se encuentra escondido<br>
+                        -Visible: el elemento se encuentra visible.<br>
+             
+                    </p>
+                    
+                    <h4>¿Qué es el zIndex y para qué sirve?</h4>
+                    
+                    <p>
+                        Es una propiedad que permite colocar capas dentro de html, tambien le agrega profundidad y permite mover elementos atrás o adelante de otros elementos.
+                    
+                    </p>
+
+                </article>
+            </section>
+            
+            <section>
+               <B><h3>Referencias:</h3></B> 
+                <p>
+                    [1] https://www.w3schools.com/html/html5_draganddrop.asp<br>
+                    [2] https://www.w3schools.com/jsref/prop_style_position.asp<br>
+                    [3] https://www.w3schools.com/cssref/pr_class_visibility.asp<br>
+                    [4] https://www.w3schools.com/cssref/pr_pos_z-index.asp<br>
+                </p>
+                
+            </section>
+        </main> 
+    </div>
+    <script type = "text/javascript" src = "laab6.js"></script>
+</body>
+</html>
