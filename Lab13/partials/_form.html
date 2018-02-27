@@ -33,3 +33,46 @@
         </div>
     </form>
   </div>
+  
+  <section>
+                
+    <h3> Preguntas a responder: </h3><br>
+                
+        <article>
+                    
+            <h5>¿Por qué es importante hacer un session_unset() y luego un session_destroy()?</h5>
+                    
+            <p>
+                Es buena práctica primero limpiar todas las variables de la sesión antes de eliminarla. 
+            </p>
+            
+            <h5>¿Cuál es la diferencia entre una variable de sesión y una cookie?</h5>
+                    
+            <p>
+                Las variables de session guardan los datos en la memoria del servidor web.
+                Las cookies guardan la informacion en un archivo en el cliente y solo pueden conservar un tamaño limitado de informacion. La sesion puede llegar a conservar objetos complejos.
+            </p>
+                 
+            <h5>¿Qué técnicas se utilizan en sitios como facebook para que el usuario no sobreescriba sus fotos en el sistema de archivos cuando sube una foto con el mismo nombre? </h5>
+                    
+            <p>
+                Mediante un timestamp al final del nombre del archivo para que de esa forma todos los archivos subidos tengan un nombre distinto.
+            </p>
+                 
+            <h5>¿Qué es CSRF y cómo puede prevenirse?</h5>
+                    
+            <p>
+                Es un tipo de exploit malicioso de un sitio web en el que comandos no autorizados son transmitidos por un usuario en el cual el sitio web confía.
+                Puede prevenirse con diferentes métodos como: Doble-posted cookie (envío doble de cookie), Unique form nonce (formulario único para cada solicitud), Requerir credenciales de autentificación nuevamente, One time Passwords.
+            </p>
+            
+             <h4>Referencias:</h4>
+                    
+            <p>
+               [1] https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet <br>
+               [2] https://www.acunetix.com/websitesecurity/csrf-attacks/ <br>
+            </p>
+                  
+        </article>
+    
+</section>
