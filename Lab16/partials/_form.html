@@ -1,0 +1,75 @@
+ <div class="row">
+      
+    <form class="col s12" action="login.php" method="POST" enctype="multipart/form-data">
+      <div class="row">
+          <div class="input-field col s12">
+          <?php if (isset($_SESSION["error"]) != ""): ?>
+              
+            <div class="card-panel">
+              <span class="red-text text-darken-2"><?=$_SESSION["error"] ?></span>
+            </div>
+              
+          <?php endif; ?>
+        </div>
+        <div class="input-field col s6">            
+          <input id="nombre" name="nombre" type="text" class="validate" >
+          <label for="nombre" style = "color: blue">Nombre(s) = Utiliza "Andres"</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="apellido" name="apellido" type="text" class="validate">
+          <label for="apellido" style = "color: green">Apellido</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" name="password" type="password" class="validate" >
+          <label for="password" style = "color: green">Contraseña = Utiliza "1234"</label>
+        </div>
+      </div>
+        
+        <div class="row">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+            </button>
+        </div>
+    </form>
+    <section>
+                
+    <h2> Preguntas a responder </h2>
+                
+        <article>             
+            <h3 id ="1">
+                ¿Qué es ODBC y para qué es útil?
+            </h3>
+                    
+            <p>
+                Open Database Connecitivity es un estandar desarrollado por SQL Access Group, es útil para acceder a cualquier dato desde cualquier aplicación, sin importar qué DBMS almacene los datos.
+            </p>
+            
+            <h3 id ="1">
+                ¿Qué es SQL Injection?
+            </h3>
+                    
+            <p>
+                Es un ataque a la base de datos en donde un usuario obtiene acceso a la misma y pueden modificar la estructura. 
+            </p>
+                 
+            <h3 id ="2">   
+                ¿Qué técnicas puedes utilizar para evitar ataques de SQL Injection?
+            </h3>
+                    
+            <p>
+                Para evitar los ataques se puede usar parámetros SQL. Los parámetros SQL son valores que se agregan a una consulta SQL en tiempo de ejecución, de forma controlada. 
+            </p>
+        </article>
+    
+</section>
+
+<section>
+                
+    <h2>Referencias</h2>
+                
+    <strong> https://www.w3schools.com/php/php_mysql_intro.asp </strong>
+      
+                
+</section>
+  </div>
