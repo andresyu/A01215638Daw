@@ -1,0 +1,34 @@
+¿Qué hace el primer bloque de código (Bloque de IF)?
+R= Verifica si hay un procedimiento que tenga el mismo nombre y si lo llegara a encontrar lo borra.
+
+¿Para qué sirve la instrucción GO?
+R= Para delimitar un set de instrucciones
+
+¿Explica que recibe como parámetro este Procedimiento y qué tabla modifica?
+R=Clave numérica, Descripción, Costo, Impuesto. Modifica la tabla de Materiales
+
+Explica en tu reporte qué recibe como parámetro este Procedimiento y qué hace
+R= Descripción del material, Costo del material, Retorna los materiales que pertenezcan a la descripción indicada y que el costo sea mayor al indicado
+
+SP en Aplicación Web
+R= #Creating Procedure DELIMITER $ CREATE PROCEDURE getById(IN id INT) BEGIN SELECT * FROM Personal_Info WHERE id_user = id; END $
+	CALL getById($id);
+
+¿Qué ventajas tienen el utilizar Store Procedures en una aplicación cliente-servidor?
+R= Ayuda a agilizar el uso de consultas haciendolo mas sencillo y rápido. A parte ayuda a evitar problemas de SQL Injection y hace que la validación sea aun más segura y consistente.
+
+¿Qué ventajas tiene utilizar SP en un proyecto?
+R= Facilita el proceso de solicitar consultas.
+
+
+Para reforzar el entendimiento de los SP, crea un SP que sea de utilidad en tu proyecto (en caso de usar otra tecnología, se deberá asumir). Incorpora dicho SP en tu reporte.
+
+IF EXISTS (SELECT name FROM sysobjects
+                      WHERE name = 'agregarRol' AND type = 'P')
+               DROP PROCEDURE agregarRol
+           GO
+
+           CREATE PROCEDURE agregarRol
+               @udescripcion VARCHAR(MAX)
+           AS
+               INSERT INTO Rol VALUES (@udescripcion);
