@@ -1,0 +1,17 @@
+¿Qué pasa cuando se realiza esta consulta? 
+Se ven los cambios realizados desde el usuario uno.
+
+¿Qué pasa cuando quieres realizar esta consulta? 
+El sistema se bloquea porque ha habido cambios que no han sido guardados.
+
+¿Qué ocurrió y por qué? 
+Los cambios de la transacción no se quedaron guardados porque se perdio todo lo que se cambió en la transacción 2.
+
+¿Para qué sirve el comando @@ERROR revisa la ayuda en línea? 
+regresa el número de errores si es que los hubo sino regresa 0
+
+¿Explica qué hace la transacción? 
+Intenta meter los datos a la tabla de cuentas, pero si hay algún error elimina la transacción completa.
+
+¿Hubo alguna modificación en la tabla? Explica qué pasó y por qué. 
+No, porque la transacción completa se borró, no solo lo que estaba mal.
